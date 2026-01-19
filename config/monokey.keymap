@@ -22,6 +22,11 @@
             bindings = <&mo 5>;
             key-positions = <17 18>;
         };
+
+        MB3 {
+            bindings = <&mkp MB3>;
+            key-positions = <18 19>;
+        };
     };
 
     behaviors {
