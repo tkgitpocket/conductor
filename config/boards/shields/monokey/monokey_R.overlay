@@ -29,15 +29,15 @@
     // トラボ誤爆防止
 };
 
+/ {
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
 // ここをコメントアウトしてオートマウスレイヤー無効
-/// {
-//    trackball_listener {
-//        compatible = "zmk,input-listener";
-//        device = <&trackball>;
 //        input-processors = <&zip_temp_layer 4 100000>; // AML
-//
-//    };
-//};
+
+    };
+};
 
 &pinctrl {
     spi0_default: spi0_default {
